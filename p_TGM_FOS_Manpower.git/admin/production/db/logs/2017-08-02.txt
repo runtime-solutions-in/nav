@@ -1,0 +1,3 @@
+Time : 13:46:33
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'fld_status = "1" LIMIT 1' at line 1
+Raw SQL : SELECT fld_id,fld_UserName,fld_countryId,userType,fld_name FROM loginMaster_tbl WHERE fld_UserName = :emailId AND `fld_UserPass` = :password AND userType != "3" fld_status = "1" LIMIT 1
