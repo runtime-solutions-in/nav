@@ -1,0 +1,127 @@
+Time : 16:01:53
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.ultra_consumerRegister_tbl' doesn't exist
+Raw SQL : SELECT id, dealerId, regionId, countryId, ownVichcle, cName, emailId, application, oemMake, fleetSize, cCity, mobileNo, deviceType, DateTime FROM ultra_consumerRegister_tbl
+
+Time : 15:38:30
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.fld_countryName' doesn't exist
+Raw SQL : SELECT fld_countryName FROM `fld_countryName` WHERE fld_id = :id
+
+Time : 15:38:22
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.fld_countryName' doesn't exist
+Raw SQL : SELECT fld_countryName FROM `fld_countryName` WHERE fld_id = :id
+
+Time : 15:27:54
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.ultra_consumerRegister_tbl' doesn't exist
+Raw SQL : SELECT COUNT(id) AS cnt FROM ultra_consumerRegister_tbl
+
+Time : 15:05:19
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.ultra_logs_tbl' doesn't exist
+Raw SQL : INSERT INTO  ultra_logs_tbl SET action = 'insert' ,parm = 'a:9:{s:5:"fName";s:4:"dfsf";s:7:"emailId";s:14:"user@email.com";s:8:"mobileNo";s:10:"9821316681";s:6:"region";N;s:7:"country";i:39;s:8:"userType";s:1:"2";s:7:"address";N;s:8:"password";s:32:"89b7db9d6d7e6c06be7286dde186e722";s:9:"ipAddress";s:15:"202.134.165.137";}',action_taken_by = 1,action_taken_to = :action_taken_to,ipAddress = '202.134.165.137'
+
+Time : 15:04:11
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : INSERT INTO loginMaster_tbl SET fld_name = :fld_name , fld_UserName = :fld_UserName, fld_mobile = :fld_mobile, fld_countryId = :v,userType = :userType, fld_UserPass = :password,  fld_ipaddress = :ipAddress
+
+Time : 15:03:28
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ipAddress' in 'field list'
+Raw SQL : INSERT INTO loginMaster_tbl SET fld_name = :fld_name , fld_UserName = :fld_UserName, fld_mobile = :fld_mobile, fld_countryId = :v,userType = :userType, fld_UserPass = :password,  ipAddress = :ipAddress
+
+Time : 15:02:22
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'password' in 'field list'
+Raw SQL : INSERT INTO loginMaster_tbl SET fld_name = :fld_name , fld_UserName = :fld_UserName, fld_mobile = :fld_mobile, fld_countryId = :v,userType = :userType, password = :password,  ipAddress = :ipAddress
+
+Time : 15:01:08
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'password' in 'field list'
+Raw SQL : INSERT INTO loginMaster_tbl SET fld_name = :fld_name , fld_UserName = :fld_UserName, fld_mobile = :fld_mobile, fld_countryId = :v,userType = :userType, password = :password,  ipAddress = :ipAddress
+
+Time : 15:00:18
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.ultra_login_tbl' doesn't exist
+Raw SQL : INSERT INTO ultra_login_tbl SET fld_name = :fld_name , fld_UserName = :fld_UserName, fld_mobile = :fld_mobile, fld_countryId = :v,userType = :userType, password = :password,  ipAddress = :ipAddress
+
+Time : 14:48:56
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+Raw SQL : SELECT id FROM `loginMaster_tbl` WHERE `fld_status` = '1' AND fld_UserName = :emailId
+
+Time : 14:47:09
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.ultra_login_tbl' doesn't exist
+Raw SQL : SELECT id FROM `ultra_login_tbl` WHERE `status` = '1' AND emailId = :emailId
+
+Time : 14:46:41
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.ultra_login_tbl' doesn't exist
+Raw SQL : SELECT id FROM `ultra_login_tbl` WHERE `status` = '1' AND emailId = :emailId
+
+Time : 14:38:48
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'
+Raw SQL : SELECT fld_id,fld_name,fld_UserName,fld_UserPass,fld_countryId,fld_mobile,fld_status FROM loginMaster_tbl WHERE id = :id AND `status` != :status LIMIT 1
+
+Time : 14:35:12
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.ultra_login_tbl' doesn't exist
+Raw SQL : SELECT id FROM `ultra_login_tbl` WHERE `status` = '1' AND emailId = :emailId
+
+Time : 14:32:29
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.ultra_region_tbl' doesn't exist
+Raw SQL : SELECT countryName,id FROM `ultra_region_tbl` WHERE `status` = '1' ORDER BY countryName ASC
+
+Time : 14:32:18
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.ultra_login_tbl' doesn't exist
+Raw SQL : SELECT id,fName,emailId,mobileNo,region,country,address,userType FROM ultra_login_tbl WHERE id = :id AND `status` != :status LIMIT 1
+
+Time : 13:54:23
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.ultra_region_tbl' doesn't exist
+Raw SQL : SELECT countryName,id FROM `ultra_region_tbl` WHERE `status` = '1' ORDER BY countryName ASC
+
+Time : 13:52:43
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'
+Raw SQL : UPDATE loginMaster_tbl SET status = :status WHERE id = :id
+
+Time : 13:51:26
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fld_ids' in 'field list'
+Raw SQL : SELECT COUNT(fld_ids) AS cnt FROM loginMaster_tbl WHERE `fld_status` != "-1"
+
+Time : 13:51:02
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fld_ids' in 'field list'
+Raw SQL : SELECT COUNT(fld_ids) AS cnt FROM loginMaster_tbl WHERE `fld_status` != "-1"
+
+Time : 13:50:43
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fld_ids' in 'field list'
+Raw SQL : SELECT COUNT(fld_ids) AS cnt FROM loginMaster_tbl WHERE `fld_status` != "-1"
+
+Time : 13:49:32
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fld_ids' in 'field list'
+Raw SQL : SELECT COUNT(fld_ids) AS cnt FROM loginMaster_tbl WHERE `fld_status` != "-1"
+
+Time : 13:48:09
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+Raw SQL : SELECT COUNT(id) AS cnt FROM loginMaster_tbl WHERE `status` != "-1"
+
+Time : 13:48:02
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+Raw SQL : SELECT COUNT(id) AS cnt FROM loginMaster_tbl WHERE `status` != "-1"
+
+Time : 13:16:09
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.ultra_login_tbl' doesn't exist
+Raw SQL : SELECT COUNT(id) AS cnt FROM ultra_login_tbl WHERE `status` != "-1"
+
+Time : 13:16:04
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.ultra_consumerRegister_tbl' doesn't exist
+Raw SQL : SELECT COUNT(id) AS cnt FROM ultra_consumerRegister_tbl
+
+Time : 13:15:54
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.ultra_region_tbl' doesn't exist
+Raw SQL : SELECT countryName,id FROM `ultra_region_tbl` WHERE `status` = '1' ORDER BY countryName ASC
+
+Time : 13:01:40
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.ultra_login_tbl' doesn't exist
+Raw SQL : SELECT COUNT(id) AS cnt FROM ultra_login_tbl WHERE `status` != "-1"
+
+Time : 12:29:16
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.ultra_consumerRegister_tbl' doesn't exist
+Raw SQL : SELECT COUNT(id) AS cnt FROM ultra_consumerRegister_tbl
+
+Time : 11:51:38
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.ultra_consumerRegister_tbl' doesn't exist
+Raw SQL : SELECT COUNT(id) AS cnt FROM ultra_consumerRegister_tbl
+
+Time : 11:51:32
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_tata_scv_2.ultra_login_tbl' doesn't exist
+Raw SQL : SELECT COUNT(id) AS cnt FROM ultra_login_tbl WHERE `status` != "-1"
